@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+* {
+    margin: 0;
+    outline: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background: #000046;
+    background: -webkit-linear-gradient(to top, #000046, #1cb5e0);
+    background: linear-gradient(to top, #000046, #d10b0b) no-repeat;
+    height: 100vh;
+    box-sizing: border-box;
+}
+
+main.beautifer-continer {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    padding-top: 1em;
+}
+
+section.beautifer-block {
+    width: 40%;
+}
+
+section.beautifer-block textarea {
+    height: 100%;
+    width: 100%;
+    resize: none;
+    border-radius: 10px;
+    background: #000000b8;
+    padding: 5px;
+    box-sizing: border-box;
+    color: white;
+}
+
+section.beautifer-control {
+    width: 8em;
+    padding: 135px 0;
+}
+
+section.beautifer-block,
+section.beautifer-control {
+    display: inline-block;
+    height: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+section.beautifer-control button {
+    padding: 10px;
+    width: 8em;
+    margin: 5px;
+    background: linear-gradient(45deg, black, transparent);
+    color: white;
+    border: none;
+    box-shadow: 0px 0px 1px white;
+    cursor: pointer;
+}
+
+section.beautifer-control button:hover,
+section.beautifer-control button:active {
+    background: linear-gradient(45deg, #cd0b0c, #140141);
+}
+
+h3 {
+    text-align: center;
+    color: white;
+    padding-top: 1em;
+}
+
+.loader {
+    display: none;
+    position: absolute;
+    border-top: 2px solid #000a31;
+    border-radius: 50%;
+    top: 49%;
+    left: 45%;
+    width: 60px;
+    height: 60px;
+    justify-content: center;
+    animation: spinner-loader 0.5s linear infinite;
+}
+
+footer.main-div_footer {
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    color: #fffffffa;
+    font-size: 12px;
+    padding: 3px;
+    background-color: #cc0b0c;
+    position: fixed;
+}
+
+section.beautifer-block textarea::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 10px;
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+section.beautifer-block textarea::-webkit-scrollbar {
+    width: 8px;
+    background-color: #F5F5F5;
+    cursor: pointer;
+}
+
+section.beautifer-block textarea::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, .3);
+    background-color: #c20b10;
+    cursor: pointer;
+}
+
+@keyframes spinner-loader {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
