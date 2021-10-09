@@ -20,4 +20,4 @@ open index.html in browser
 
 ## Screenshots
 
-![ScreenShot](https://i.postimg.cc/wjMDGvrB/Annotation-2020-08-02-155108.png)
+![ScreenShot](https://raw.githubusercontent.com/sandeep-sala/json-beautifier/master/src/img/json_beautifier.png)
